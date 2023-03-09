@@ -36,7 +36,10 @@ const { chains, provider } = configureChains(
 );
 
 // YOUR ZERODEV PROJECT ID
-const projectId = 'b5486fa4-e3d9-450b-8428-646e757c10f6'
+// Ethereum - Goerli
+// const projectId = '6a1c3c7c-9517-42b7-b1a0-0c3e94843e9a'
+// Polygon - Mumbai
+const projectId = '9692b82e-31c5-4894-ad7e-c04b470357e4'
 
 const connectors = connectorsForWallets([
   {
