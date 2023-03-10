@@ -23,7 +23,7 @@ import {
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { polygonMumbai } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
-
+import { PROJECT_ID_MUMBAI, PROJECT_ID_GOERLI } from '../config.js';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -37,9 +37,9 @@ const { chains, provider } = configureChains(
 
 // YOUR ZERODEV PROJECT ID
 // Ethereum - Goerli
-// const projectId = '6a1c3c7c-9517-42b7-b1a0-0c3e94843e9a'
+// const projectId = PROJECT_ID_GOERLI;
 // Polygon - Mumbai
-const projectId = '9692b82e-31c5-4894-ad7e-c04b470357e4'
+const projectId = PROJECT_ID_MUMBAI;
 
 const connectors = connectorsForWallets([
   {
